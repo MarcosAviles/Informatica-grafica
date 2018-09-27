@@ -1,0 +1,58 @@
+Una vez iniciado el programa en primer lugar podemos pulsar:
+	- '1' para ejecutar la respectiva práctica, es decir, practica 1.
+	- '2' para ejecutar la respectiva práctica, es decir, practica 2.
+
+Si elegimos la práctica 1, dentro de la práctica 1 hay dos modelos, cubo y tetraedro por lo que debemos pulsar:
+	-'C' para seleccionar el cubo.
+	-'T' para seleccionar el tetraedro.
+
+Una vez elegido el modelo:
+	- 'P' para visualizar los puntos del modelo.
+	- 'L' para visualizar todas las aristas del modelo.
+	- 'S' para visualizar el modelo sólido.
+	- 'A' para visualizar el modelo en modo ajedrez.
+
+En caso de elegir las segunda práctica, (práctica 2), nos encontramos con 3 opciones:
+	-'I' nos lee un fichero PLY con sus vértices y caras. Por ejemplo he adjuntado "beethoven".
+	-'N' nos lee un perfil, obviando sus caras, y realizamos la revolución del objeto. (Objeto Peón de Ajedrez).
+	-'O' esta es la parte opcional, en la que creo un polígono cerrado, y le realizo el barrido al poligono x número de veces. (x es el número de barridos que lo recibe el constructor por parámetro).
+
+A la hora de pintar puntos, aristas, sólido o ajedrez se sigue respectando las teclas, es decir, como anterior mente en la práctica 1, P puntos, L aristas, S sólido, A ajedrez.
+
+En cualquier momento podemos pulsar 'Q' para salir del programa.
+
+* Las teclas no tiene porque ser mayúsculas, para el programa realizará la misma funcion
+independientemente si es mayúscula o minúscula.
+
+/----------------------------------Practica 3------------------------------------------/
+
+Como siempre sigo manteniendo las prácticas anteriores y comento la utilización de la nueva práctica.
+
+Para iniciar la práctica 3 solo basta con pulsar la tecla '3'.
+Una vez iniciada, (Consejo: Disminuir la cámara para visualizar la grúa completamente) podemos pulsar:
+
+	-'z': Girar la cabeza de la grúa hacia la derecha con un ángulo de 10 grados cada vez que es pulsada.
+	-'Z': Girar la cabeza de la grúa hacia la izquierda con un ángulo de 10 grados cada vez que es pulsada.
+	-'x': Mover el carro de la grúa hacia adelante con un desplazamiento de 0.1 en el eje x cada vez que se pulsa la tecla.
+	-'X': Mover el carro de la grúa hacia atrás con un desplazamiento de 0.1 en el eje x cada vez que se pulsa la tecla.
+	-'c': Bajar el gancho de la grúa con un decremento de 0.1 en el eje y cada vez que se pulsa la tecla.
+	-'C': Subir el gancho de la grúa con un aumento de 0.1 en el eje y cada vez que se pulsa la tecla.
+
+Todos los movimientos posibles anteriores cuentan con un tope, exepto el movimiento de la cabeza de la grúa, es decir, por ejemplo el movimiento del carro de la grúa no va a sobrepasar la anchura de la misma, e igualmente hacia atrás. En el caso del movimiento de la cabeza no tiene límete ya que gira sobre sí misma y no es necesario un tope.
+
+Para la animación podemos pulsar:
+
+	-'b': Aumenta la velocidad del giro de la cabeza de la grúa. Siempre gira a derechas
+	-'B': Disminuye la velocidad del giro de la cabeza de la grúa. En el caso de que la velocidad sea menor que cero, aumentará la velocidad pero girará a izquierdas.
+	-'n': Aumenta la velocidad del carro, en este caso he implementado que cuando llegue al tope siga con la misma velocidad, pero el carro sigue moviéndose hacia adelante y hacia atrás.
+	-'N': Disminuye la velocidad del carro, en este caso de que la velocidad sea menor que 0 seguirá ejecutándose la animación en sentido contrario.
+	-'m': Aumenta la velocidad del gancho. Igualmente que el carro, la animación consta de cuando llegue al tope en el caso de que vaya bajando, cambiará el sentido y el gancho irá subiendo con la misma velocidad.
+	-'M': Disminuye la velocidad del gancho. Con la misma carácteristicas, cuando la velocidad sea menor que 0, se invertirá el movimiento de subida y bajada, pero seguirá la animación.
+
+Por último he añadido la tecla 'p' para esta práctica 3, que parará automáticamente todas las velocidades de la grúa que esten activas, anulando la animación. No es sensible a mayúsculas ni minúsculas, es decir, podemos utilizar tanto 'p' como 'P'.
+
+/*--------------------------------------------PRACTICA 4---------------------------------------*/
+
+Pulsando la tecla '4': entramos en la práctica 4.
+
+

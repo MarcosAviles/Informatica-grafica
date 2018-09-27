@@ -1,0 +1,166 @@
+//**************************************************************************
+// Práctica 1 usando objetos
+//**************************************************************************
+
+#include "objetos.h"
+
+
+//*************************************************************************
+// _puntos3D
+//*************************************************************************
+
+_puntos3D::_puntos3D()
+{
+    
+}
+
+//*************************************************************************
+// dibujar puntos
+//*************************************************************************
+
+void _puntos3D::draw_puntos(float r, float g, float b, int grosor)
+{
+
+}
+
+
+//*************************************************************************
+// _triangulos3D
+//*************************************************************************
+
+_triangulos3D::_triangulos3D()
+{
+}
+
+
+//*************************************************************************
+// dibujar en modo arista
+//*************************************************************************
+
+void _triangulos3D::draw_aristas(float r, float g, float b, int grosor)
+{
+
+}
+
+//*************************************************************************
+// dibujar en modo sólido
+//*************************************************************************
+
+void _triangulos3D::draw_solido(float r, float g, float b)
+{
+
+}
+
+//*************************************************************************
+// dibujar en modo sólido con apariencia de ajedrez
+//*************************************************************************
+
+void _triangulos3D::draw_solido_ajedrez(float r1, float g1, float b1, float r2, float g2, float b2)
+{
+
+}
+
+
+
+//*************************************************************************
+// clase cubo
+//*************************************************************************
+
+_cubo::_cubo(float tam)
+{
+	vector<_vertex3f> vertices; // Vector de vertices 
+	// Inicializo los valores de las coordenadas de todos los vertices del cubo (8 vertices)
+	// V0	
+	vertices[0].x=0.0;
+	vertices[0].y=0.0;
+	vertices[0].z=0.0;
+	// V1
+	vertices[1].x=tam;
+	vertices[1].y=0.0;
+	vertices[1].z=0.0;
+	// V2
+	vertices[2].x=0.0;
+	vertices[2].y=tam;
+	vertices[2].z=0.0;
+	// V3
+	vertices[3].x=tam;
+	vertices[3].y=tam;
+	vertices[3].z=0.0;
+	// V4
+	vertices[4].x=tam/2;
+	vertices[4].y=tam+tam/2;
+	vertices[4].z=tam;
+	// V5
+	vertices[5].x=tam/2;
+	vertices[5].y=tam/2;
+	vertices[5].z=tam;
+	// V6
+	vertices[6].x=tam+tam/2;
+	vertices[6].y=tam+tam/2;
+	vertices[6].z=tam;
+	// V7
+	vertices[7].x=tam+tam/2;
+	vertices[7].y=tam/2;
+	vertices[7].z=tam;
+
+	vector<_vertex3i> caras; // Vector de caras planas
+	// Emparejo los vertices correspondientes a las caras planas
+	// C0	
+	caras[0][0]=0;
+	/*caras[0][1]=vertices[1];
+	caras[0][2]=vertices[2];
+
+	caras[1][0]=vertices[2];
+	caras[1][1]=vertices[1];
+	caras[1][2]=vertices[3];
+	// C1
+	caras[2][0]=vertices[1];
+	caras[2][1]=vertices[7];
+	caras[2][2]=vertices[3];
+
+	caras[3][0]=vertices[3];
+	caras[3][1]=vertices[7];
+	caras[3][2]=vertices[6];
+	// C2
+	caras[4][0]=vertices[4];
+	caras[4][1]=vertices[2];
+	caras[4][2]=vertices[3];
+
+	caras[5][0]=vertices[4];
+	caras[5][1]=vertices[3];
+	caras[5][2]=vertices[6];
+	// C3
+	caras[6][0]=vertices[4];
+	caras[6][1]=vertices[5];
+	caras[6][2]=vertices[0];
+
+	caras[7][0]=vertices[4];
+	caras[7][1]=vertices[0];
+	caras[7][2]=vertices[2];
+	// C4
+	caras[8][0]=vertices[0];
+	caras[8][1]=vertices[5];
+	caras[8][2]=vertices[7];
+
+	caras[9][0]=vertices[0];
+	caras[9][1]=vertices[7];
+	caras[9][2]=vertices[1];
+	// C5
+	caras[10][0]=vertices[5];
+	caras[10][1]=vertices[4];
+	caras[10][2]=vertices[6];
+
+	caras[11][0]=vertices[5];
+	caras[11][1]=vertices[6];
+	caras[11][2]=vertices[7];*/
+}
+
+
+//*************************************************************************
+// clase piramide
+//*************************************************************************
+
+_piramide::_piramide(float tam, float al)
+{
+
+}

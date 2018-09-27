@@ -1,0 +1,16 @@
+Una vez iniciado el programa en primer lugar podemos pulsar:
+	- 'C' si queremos visualizar el modelo Cubo.
+	- 'T' si queremos visualizar el modelo Tetraedro.
+En cualquier momento podemos cambiar de modelo volviendo a pulsar 'C' o 'T'.
+
+Una vez elegido el modelo:
+	- 'P' para visualizar los puntos del modelo.
+	- 'L' para visualizar todas las aristas del modelo.
+	- 'S' para visualizar el modelo sólido.
+	- 'A' para visualizar el modelo en modo ajedrez.
+
+En cualquier momento podemos pulsar 'Q' para salir del programa.
+
+*Las teclas no tiene porque ser mayúsculas, para el programa realizará la misma funcion
+independientemente si es mayúscula o minúscula.
+
